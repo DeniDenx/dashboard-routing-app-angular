@@ -1,6 +1,6 @@
 # DashboardRoutingAppAngular
 
-<img src="project_screen.png"/>
+<img src="project_screen.png" width="300" />
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
@@ -28,3 +28,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img width="499" alt="image" src="https://user-images.githubusercontent.com/78281672/154273932-de8b2025-ef30-4d84-90e9-30957d85289f.png">
