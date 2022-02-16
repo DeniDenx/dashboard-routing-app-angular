@@ -23,3 +23,12 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
+
+
+.text-info:hover {
+  background: rgba(118, 150, 155, 0.18);
+}
+
+.text-info:active {
+  background: rgba(100, 149, 237, 0.35);
+}
