@@ -4,9 +4,11 @@ import {AdminDashboardComponent} from './components/admin-dashboard/admin-dashbo
 import {HomeComponent} from './components/home/home.component';
 import {ContactsComponent} from './components/contacts/contacts.component';
 import {AboutComponent} from './components/about/about.component';
+import {AuthGuard} from '../../guards/auth.guard';
 
 const routes: Routes = [
-  {path: '', component: AdminDashboardComponent, children: [
+  {path: '', component: AdminDashboardComponent,
+     children: [
       {path: 'home', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'contacts', component: ContactsComponent},
