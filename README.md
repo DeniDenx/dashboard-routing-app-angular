@@ -1,6 +1,7 @@
 # DashboardRoutingAppAngular
 
-<img src="project_screen.png" width="300" />
+
+<img src="_project_screens/Screenshot 2022-02-17 at 12.29.22 PM.png" width="300"/><img src="_project_screens/Screenshot 2022-02-17 at 12.28.30 PM.png" width="300"/><img src="_project_screens/Screenshot 2022-02-17 at 12.29.12 PM.png" width="300"/>
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
