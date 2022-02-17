@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactsDetailsComponent } from './components/contacts-details/contacts-details.component';
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import { AboutComponent } from './components/about/about.component';
     FooterComponent,
     HomeComponent,
     ContactsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactsDetailsComponent,
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
   ]
 })
 export class AdminModule { }
