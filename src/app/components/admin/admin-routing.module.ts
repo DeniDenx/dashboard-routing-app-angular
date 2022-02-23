@@ -6,6 +6,7 @@ import { AdminDashboardComponent } from './components/admin-dashboard/admin-dash
 import { HomeComponent } from './components/home/home.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { AboutComponent } from './components/about/about.component';
+import {UsersResolver} from './resolvers/users.resolver';
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'contacts', component: ContactsComponent },
+      { path: 'contacts', component: ContactsComponent, resolve: {
+        users: UsersResolver
+        } },
       {
         path: 'contacts/user/:id', component: ContactsDetailsComponent, resolve: {
           user: UserResolver

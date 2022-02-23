@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {filter, mapTo, merge, Observable} from 'rxjs';
+import {ActivatedRoute, ResolveEnd, ResolveStart, Router} from '@angular/router';
+import {AdminService} from '../../services/admin.service';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -7,9 +10,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminDashboardComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

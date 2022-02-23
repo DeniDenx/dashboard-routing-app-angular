@@ -45,7 +45,7 @@ export class AuthGuard implements CanActivate, CanActivateChild, CanDeactivate<u
     nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if (confirm('You want to Logout. Are you sure?')) {
       localStorage.removeItem('token');
-      return true;
+      return true
     }
     return false;
   }

@@ -19,7 +19,7 @@ import { ContactsDetailsComponent } from './components/contacts-details/contacts
     HomeComponent,
     ContactsComponent,
     AboutComponent,
-    ContactsDetailsComponent,
+    ContactsDetailsComponent ,
   ],
   imports: [
     CommonModule,

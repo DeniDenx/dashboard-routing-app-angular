@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import {Observable, of, throwError} from 'rxjs';
+import {from, Observable, of, throwError} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -22,13 +22,13 @@ export class AuthService {
     return this.getToken() !== null;
   }
 
-  login({email, password}: any): Observable<any> {
-    if (email === 'admin@gmail.com' && password === 'admin123') {
-      this.setToken('sadmlkasdlkdiodamcvmaplqwdlqwkdngiqngwnr');
-      return of({name: 'Admin', email: 'admin@gmail.com'});
+
+  login(params: { email: string, password: string }): Observable<string | boolean> {
+    if (params.email === 'admin@gmail.com' && params.password === 'admin123') {
+      this.setToken('asdmnasjkdajskndnjuxdquiwdhiuqwhdiuqwhd');
+      return of(true)
     }
-    const err = new Error('Failed to Login');
-    return throwError(() => err);
+    return throwError(() => new Error('Failed to Login'));
   }
 
   logout() {
